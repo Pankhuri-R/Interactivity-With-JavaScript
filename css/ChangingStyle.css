@@ -1,0 +1,25 @@
+.btn{
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #00ffff;
+    border:  #000000;
+    border-width: 2px;
+    font-size: 125%;
+}
+
+.btn:hover{
+    background-color: #808080;
+}
+
+.primary{
+    color: #4b0082;
+    font-size: 300%;
+}
+
+#demo{
+    background-color: #808080;
+    color: #ffffff;
+    font-size: 110%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

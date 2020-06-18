@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Form</title>
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <h3>Register Here!</h3>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Input Types</legend>
+                <label>
+                    Name
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" id="email" name="email" placeholder="abc@yahoo.com" required>
+                </label>
+<br>
+                <label>
+                    Password
+                    <input type="password" name="password" id="pass" placeholder="*********" required>
+                </label>
+
+                <label>
+                    Confirm Password
+                    <input type="password" name="pass" id="same-pass" placeholder="**********" required onchange="return check()">
+                </label>
+<br>
+                Choose your gender<br>
+                <label>
+                    Male
+                    <input type="radio" name="sex" value="male" checked>
+
+                </label>
+
+                <label>
+                    Female
+                    <input type="radio" name="sex" value="female">
+                </label>
+
+                <label>
+                    Transgender
+                    <input type="radio" name="sex" value="Transgender">
+                </label>
+<br>
+Qualifications
+                <label for="checkBox">
+                    <input type="checkBox" name="studies" value="tenth" checked>10th Pass;
+
+                </label>
+
+                <label for="checkBox">
+                    <input type="checkBox" name="studies" id="12th">12th Pass;
+                </label>
+<br>
+Select the day when you are free in the evening
+<label>
+    <input type="text">
+</label>
+                <label for="drop-down">
+                    <select name="days" id="days" multiple>
+                        <option value="Sunday" selected>Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thurusday">Thurusday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <input type="submit" name="submit-btn" value="Submit Here" onclick="return check()">
+        </form>
+    </body>
+</html>
